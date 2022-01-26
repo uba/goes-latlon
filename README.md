@@ -1,5 +1,7 @@
 # goes-latlon
-Python script that can be used to generate latitude/longitude coordinates for GOES-16 full-disk extent. 🌎🛰️  
+Python script that can be used to generate latitude/longitude coordinates for GOES-16 full-disk extent. 🌎🛰️
+
+The grid files can be accessed in this repository from the `data` directory.
 
 ## Install
 Clone the repository:
