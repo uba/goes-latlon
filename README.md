@@ -23,7 +23,7 @@ The script will generate latitude/longitude values for GOES-16 full-disk extent 
 
 The result is a set of netCDF files for each spatial resolution (1.0, 2.0, 4.0 and 10 kilometers).
 
-Basically, each file contains grids for latitude and longitude that is the same size as the data array in the GOES netCDF file (e.g. `CMI` array). netCDF file is encoded using `int16` datatype and `scale_factor` and `add_offset` attributes.
+Basically, each file contains grids for latitude and longitude that is the same size as the data array in the GOES netCDF file (e.g. `CMI` array). netCDF file is encoded using `int16` datatype, `scale_factor` and `add_offset` attributes.
 
 * `data/goes16-full-disk-lat-lon-1.0km.nc`
 * `data/goes16-full-disk-lat-lon-2.0km.nc`
@@ -32,6 +32,8 @@ Basically, each file contains grids for latitude and longitude that is the same 
 
 ## Read Example
 ````python
+from netCDF4 import Dataset
+
 # Define path to [lat,lon] grid file
 path = './data/goes16-full-disk-lat-lon-2.0km.nc'
 
@@ -46,7 +48,11 @@ nc.close()
 ````
 
 ## Data Preview
-<img src="preview/latitudes.png" width="200px"/> | <img src="preview/longitudes.png" width="200px"/>
+Latitudes - 2km (5424 x 5424)| Longitudes - 2km (5424 x 5424)
+--- | ---
+<img src="preview/latitudes.png" width="300px"/> | <img src="preview/longitudes.png" width="300px"/>
+
+*Note: Currently GOES-16 satellite is positioned at longitude -75.0, latitude 0.0.*
 
 ## References
 GOES-R SERIES PRODUCT DEFINITION AND USERS’ GUIDE (PUG) | https://www.goes-r.gov/products/docs/PUG-L2+-vol5.pdf - Session 4.2.8.1: Navigating from N/S Elevation Angle (y) and E/W Scanning Angle (x) to Geodetic Latitude (φ) and Longitude (λ)
