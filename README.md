@@ -60,3 +60,5 @@ Latitudes - 2km (5424 x 5424)| Longitudes - 2km (5424 x 5424)
 GOES-R SERIES PRODUCT DEFINITION AND USERS’ GUIDE (PUG) | https://www.goes-r.gov/products/docs/PUG-L2+-vol5.pdf - Session 4.2.8.1: Navigating from N/S Elevation Angle (y) and E/W Scanning Angle (x) to Geodetic Latitude (φ) and Longitude (λ)
 
 Joshua Hrisko - GOES-R Satellite Latitude and Longitude Grid Projection Algorithm. https://makersportal.com/blog/2018/11/25/goes-r-satellite-latitude-and-longitude-grid-projection-algorithm
+
+Geostationary Satellite View - https://proj.org/operations/projections/geos.html
